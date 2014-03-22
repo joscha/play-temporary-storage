@@ -1,4 +1,0 @@
-play-temporary-storage
-=====================================
-
-A library for the Play Framework 2 that allows temporary storage of serializable objects within either the play Cache or play Session (with optional encryption).
