@@ -1,0 +1,27 @@
+@(a: Integer, aRaw: String, b: Integer, bRaw: String, c: Integer, cRaw: String)
+
+@main("TemporaryStorage example") {
+
+<table>
+  <tr style="text-align: left">
+    <th>Type</th>
+    <th>Entry</th>
+    <th>Raw Entry</th>
+  </tr>
+  <tr>
+    <td>Cache</td>
+    <td>@a</td>
+    <td>@aRaw</td>
+  </tr>
+  <tr>
+    <td>Session</td>
+    <td>@b</td>
+    <td>@bRaw</td>
+  </tr>
+  <tr>
+    <td>Session (encrypted)</td>
+    <td>@c</td>
+    <td>@cRaw</td>
+  </tr>
+</table>
+}
