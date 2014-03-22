@@ -15,7 +15,15 @@ Have a look at the simple interface [here](code/app/com/feth/play/module/ts/Temp
 ## Sample
 ```java
 final boolean encrypted = true;
+// use the session to store our data and enable encryption
 final TemporaryStorage storage = new SessionTemporaryStorage(session(), encrypted);
-Integer count = storage("MY_KEY");
-storage.set("MY_KEY", count == null ? count = 0 : ++count);
+// fetch the count
+Integer count = storage.get("count");
+// set the count - it will expire in 5 seconds
+storage.set("count", count == null ? count = 0 : ++count, 5);
+
+if(count > 3) {
+  // remove the count
+  storage.remove("count");
+}
 ```	
