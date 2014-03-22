@@ -10,7 +10,7 @@ Temporary storage module for the Play Framework 2 that allows to put serializabl
 and set an expiration time.
 
 The interface of `TemporaryStorage` is 100% compatible to the one of `play.Cache`.
-Have a look [here](code/app/com/feth/play/module/ts/TemporaryStorage.java)
+Have a look at the simple interface [here](code/app/com/feth/play/module/ts/TemporaryStorage.java) and don't forget to check out the [sample application](sample/).
 
 ## Sample
 ```java
